@@ -1,6 +1,8 @@
-# Code-Theory-Of-Everything
+---
+---
+# The Fundamentals
 
-### The Fundamental Nature of Every Program
+### Every Program is
 ```
 causes --> black box --> effects
 ```
@@ -32,31 +34,34 @@ outputs  <--  controller
     - **Ports** are implemented as **adapters**.
 
 ---
+---
 
-### Types of Inputs/Causes
+# Types of Inputs/Causes
 
-#### Entry Point Inputs
+### Entry Point Inputs
 - Examples:
   - The `args` in `Main(string[] args) {}`
   - External configuration files
   - Environment variables
 
-#### Runtime Inputs
+### Runtime Inputs
 - Examples:
   - HTTP requests
   - Console input (`Console.ReadLine()`)
   - Voltage change
+    
+---
 ---
 
-### Types of Controllers
+# Types of Controllers
 
-#### Entry Point Controllers
+### Entry Point Controllers
 - Control what happens based on entry point inputs.
 - Examples:
   - Service configuration
   - Dependency injection (DI) registration
 
-#### Runtime Controllers
+### Runtime Controllers
 - Control what happens based on runtime inputs.
 - Examples:
   - A web server (itself a controller)
@@ -64,8 +69,9 @@ outputs  <--  controller
   - A scheduled job (listens to time as an implicit runtime input)
 
 ---
+---
 
-## Primary Axis: Program Lifetime
+# Primary Axis: Program Lifetime
 
 ### Terminating Programs
 - Programs that execute for a finite duration and terminate after completing their task.
@@ -82,8 +88,9 @@ outputs  <--  controller
   - Background services
 
 ---
+---
 
-## Secondary Axis: Mode of Operation
+# Secondary Axis: Mode of Operation
 
 ### Interaction as a Fundamental Concept
 - At the core, a program can be seen as a function of time and other optional inputs:
@@ -111,5 +118,8 @@ outputs  <--  controller
 
 - **Daemon or Server Programs**: Seem autonomous but are constantly monitoring (interacting with) triggers like requests or system events.
 
-### Key Insight
+---
+---
+
+# Key Insight
 **Time is an implicit input to all programs, and every program is interactive.**
